@@ -28,6 +28,9 @@ def to_isometric(x, y, z=0):
 
 # Kugel-Klasse
 class Ball:
+    """AI is creating summary for 
+    """
+    
     def __init__(self, x, y, z, radius):
         self.x = x
         self.y = y
@@ -36,7 +39,7 @@ class Ball:
         self.color = BLUE
         self.vel_x = 0
         self.vel_y = 0
-        self.acceleration = 0.5
+        self.acceleration = 0.3
         self.friction = 0.98
 
     def move(self, keys):
@@ -108,7 +111,7 @@ def main():
                         (iso_x + 400, iso_y + 250),
                         (iso_x + 350, iso_y + 225),
                     ],
-                    1,
+                    2,
                 )
 
         # Kugel zeichnen

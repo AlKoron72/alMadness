@@ -1,6 +1,10 @@
 import pygame
 
 class Ball:
+    """
+    Kugel-Klasse
+    """ 
+    
     def __init__(self, x, y, radius):
         self.x = x
         self.y = y
